@@ -6,7 +6,7 @@ const launchServer = async () => {
     const expressServer = new ExpressServer(config.URL_PORT);
     try {
         expressServer.launch();
-        logger.info('Express server running');
+        logger.info('Express server running test');
     } catch (error: any) {
         logger.error('Express Server failure %s', error.message);
         await expressServer.close();
